@@ -1,0 +1,9 @@
+﻿<Application x:Class=" EstomedApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HL7_DB_EXPORT"
+             StartupUri="ui/MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="EstomedApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HL7_DB_EXPORT"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Title="EstomedApp" Height="450" Width="342">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="165*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox KeyboardNavigation.TabIndex="2" x:Name="serverInput" HorizontalAlignment="Left" Height="23" Margin="87,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Text="localhost" Grid.Column="1"/>
+        <Label x:Name="label" Content="Serwer" HorizontalAlignment="Left" Margin="6,21,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="label1" Content="Port" HorizontalAlignment="Left" Margin="6,58,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="settingsExtended" Content="Wykryj" HorizontalAlignment="Left" Margin="212,61,0,0" VerticalAlignment="Top" Width="75" Click="settingsExtended_Click" Height="23" Grid.Column="1"/>
+        <ProgressBar x:Name="progress" HorizontalAlignment="Left" Height="20" Margin="6,264,0,0" VerticalAlignment="Top" Width="314" Maximum="100" Minimum="0" Grid.Column="1"/>
+        <Button KeyboardNavigation.TabIndex="7" x:Name="runButton" Content="Generuj HL7" HorizontalAlignment="Left" Margin="67,333,0,0" VerticalAlignment="Top" Width="197" Click="runButton_Click" Height="32" Grid.Column="1"/>
+        <Label x:Name="status" Content="" HorizontalAlignment="Left" Margin="67,292,0,0" VerticalAlignment="Top" Height="35" Width="197" Grid.Column="1"/>
+        <ComboBox KeyboardNavigation.TabIndex="3" x:Name="portList" HorizontalAlignment="Left" Margin="87,62,0,0" VerticalAlignment="Top" Width="108"  IsEditable="True" IsReadOnly="False" Text="" TextBoxBase.TextChanged="portList_TextChanged" Grid.Column="1"/>
+        <Label x:Name="label2" Content="Baza danych" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,91,0,0" Grid.Column="1"/>
+        <Label x:Name="label3" Content="Użytkownik" HorizontalAlignment="Left" Margin="6,125,0,0" VerticalAlignment="Top" Width="76" Grid.Column="1"/>
+        <Label x:Name="label4" Content="Hasło" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,159,0,0" Width="76" Grid.Column="1"/>
+        <TextBox KeyboardNavigation.TabIndex="4" x:Name="dbInput" HorizontalAlignment="Left" Height="23" Margin="87,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Grid.Column="1"/>
+        <TextBox KeyboardNavigation.TabIndex="5" x:Name="userInput" HorizontalAlignment="Left" Height="23" Margin="87,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Grid.Column="1"/>
+        <Label x:Name="label1_Copy" Content="Plik" HorizontalAlignment="Left" Margin="6,191,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="changeFile" Content="Zmień plik" HorizontalAlignment="Left" Margin="87,230,0,0" VerticalAlignment="Top" Width="200" Click="changeFile_Click" Height="23" Grid.Column="1"/>
+        <TextBox KeyboardNavigation.TabIndex="6" x:Name="passwordInput" HorizontalAlignment="Left" Height="23" Margin="87,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Grid.Column="1"/>
+        <TextBox KeyboardNavigation.TabIndex="6" x:Name="outputInput" HorizontalAlignment="Left" Height="23" Margin="87,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Grid.Column="1"/>
+    </Grid>
+</Window>
